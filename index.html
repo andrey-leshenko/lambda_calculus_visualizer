@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+body {
+	margin: 2em;
+	background-color: black;
+	color: white;
+}
+button {
+	background-color: lightgreen;
+	margin-top: 1em;
+}
+		</style>
+		<!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css"/>-->
+	</head>
+	<body>
+		<h1>Lambda Calculus Visualizer V0.0.1</h1>
+		<form>
+			<textarea id="editor" rows="10" cols="80">(L x. L y. x2 y x) (Lf. (Lx. f (x x)) (Lx.f(x x)))</textarea>
+			<br>
+			<button type="button" onclick="draw()"> [== Go ==]</button>
+		</form>
+		<pre id="out"></pre>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>-->
+		<script src="lambda.js"></script>
+		<script src="ui.js"></script>
+	</body>
+</html>
